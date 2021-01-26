@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alex - Dev:HTML-CSS;</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #F3F2EF;
+        }
+        h2{
+            font-size: 5em;
+            margin-bottom: 50px;
+        }
+        h2 strong{
+            color: #0A66C2;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        i.fa{
+            border-radius: 5px;
+            padding: 5px 10px;
+            background: #0A66C2;
+            color: #fff;
+        }
+        span{
+            background-color: #d8d8d8;
+            display: block;
+            width: 100%;
+            height: 10px;
+            border: 1px solid #c7c7c7;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        span::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 20%;
+            height: 100%;
+            background: #0A66C2;
+            z-index: 1;
+            animation: animate 2s ease infinite;
+        }
+        @keyframes animate{
+            0% 100%{
+                transform:translateX(-10%);
+            }
+            50%{
+                transform:translateX(430%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><strong>Linked</strong> <i class="fa fa-linkedin"></i></h2>
+        <span></span>
+    </div>
+
+</body>
+</html> 
